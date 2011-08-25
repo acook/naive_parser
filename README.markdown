@@ -16,4 +16,5 @@ Other Cool Things
 - Rspec is being used for a BDD-ish style of testing.
 - Pry is being used for exploration and debugging.
 - Open4 is being used along with Rspec to test the executable.
+- Autotest is now included for continuous testing.
 
