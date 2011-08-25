@@ -1,8 +1,7 @@
 #!/usr/bin/env rspec
 # BDD specs for naive_parser
 
-require './naive_parser'
-Bundler.require(:test)
+require 'spec_helper'
 
 exe = './naive_parser'
 test_file = 'test_file.txt'
