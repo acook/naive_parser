@@ -3,7 +3,7 @@
 
 raise "No file provided on command line." if ARGV.empty?
 
-require './naive_parser'
+require './lib/naive_parser'
 
 
 filename  = ARGV.first
