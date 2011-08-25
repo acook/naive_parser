@@ -7,6 +7,6 @@ require './naive_parser'
 
 
 filename  = ARGV.first
-plaintext = File.read(file_to_parse)
+plaintext = File.open(filename, File::RDONLY).read
 
 NaiveParser.new(plaintext)
