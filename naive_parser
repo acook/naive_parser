@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# A very simple, very naive parser
+
+raise "No file provided on command line." if ARGV.empty?
+
+require './naive_parser'
+
+
+file_to_parse  = ARGV.first
+file_as_array  = File.read(file_to_parse)
+
+NaiveParser.new(plaintext)
