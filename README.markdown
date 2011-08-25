@@ -18,3 +18,8 @@ Other Cool Things
 - Open4 is being used along with Rspec to test the executable.
 - Autotest is now included for continuous testing.
 
+Credits
+------
+
+**Anthony M. Cook** *2011* - @anthony_m_cook / http://anthonymcook.com / http://github.com/acook
+
