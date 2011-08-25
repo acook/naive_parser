@@ -4,6 +4,9 @@
 require './naive_parser'
 Bundler.require(:test)
 
+exe = './naive_parser'
+test_file = 'test_file.txt'
+
 describe NaiveParser do
   describe '#parse' do
     it 'returns an array' do
@@ -14,9 +17,8 @@ describe NaiveParser do
 end
 
 describe 'naive_parser executable' do
-  it "doesn't die horribly" do
-    require 'open4'
-    status = Open4.popen4('./naive_parser') {}
+  it "exits with a raise when no file found" do
+    status = Open4.popen4(exe) {}
     status.to_i.should eq(256)
   end
 end
