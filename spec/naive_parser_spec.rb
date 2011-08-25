@@ -4,7 +4,7 @@
 require 'spec_helper'
 
 exe = './naive_parser'
-test_file = 'test_file.txt'
+test_file = './spec/fixtures/test_file.txt'
 
 describe NaiveParser do
   describe '#parse' do
