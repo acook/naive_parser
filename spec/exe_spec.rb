@@ -4,7 +4,7 @@ exe = './naive_parser'
 test_file = './spec/fixtures/test_file.txt'
 
 describe 'naive_parser executable' do
-  it "exits with a raise when no file found" do
+  it "exits with a raise when no file passed in" do
     status = Open4.popen4(exe) {}
     status.to_i.should eq(256)
   end
